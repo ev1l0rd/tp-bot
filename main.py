@@ -51,8 +51,9 @@ async def on_ready():
 
 @bot.command()
 async def about(ctx):
+    '''Show a quick link to the bot's Github repository.'''
     embed = discord.Embed(title='TP-Bot',
-        description='A bot for the ThemePlaza discord.',
+        description='A bot for the ThemePlaza discord, made by ev1l0rd.',
         url='https://github.com/ev1l0rd/tp-bot')
     embed.set_thumbnail(url='https://avatars2.githubusercontent.com/u/13433513')
     await ctx.send(embed=embed)
